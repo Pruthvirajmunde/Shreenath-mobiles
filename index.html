@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreenath Mobiles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Shreenath Mobiles</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="mobiles.html">Mobiles</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="slideshow">
+        <div class="slide">
+            <img src="https://via.placeholder.com/1200x500?text=Slide+1" alt="Slide 1">
+        </div>
+        <div class="slide">
+            <img src="https://via.placeholder.com/1200x500?text=Slide+2" alt="Slide 2">
+        </div>
+        <div class="slide">
+            <img src="https://via.placeholder.com/1200x500?text=Slide+3" alt="Slide 3">
+        </div>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-category">
+            <div class="category">
+                <a href="mobiles.html">
+                    <img src="https://via.placeholder.com/300x300?text=Mobiles" alt="Mobiles">
+                </a>
+                <h3>Mobiles</h3>
+            </div>
+            <div class="category">
+                <img src="https://via.placeholder.com/300x300?text=Tabs" alt="Tabs">
+                <h3>Tabs</h3>
+            </div>
+            <div class="category">
+                <img src="https://via.placeholder.com/300x300?text=Accessories" alt="Accessories">
+                <h3>Accessories</h3>
+            </div>
+            <div class="category">
+                <img src="https://via.placeholder.com/300x300?text=Smart+TVs" alt="Smart TVs">
+                <h3>Smart TVs</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="new-arrivals">
+        <h2>New Arrivals</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="https://via.placeholder.com/200x200?text=iPhone+13" alt="iPhone 13">
+                <h3>iPhone 13</h3>
+                <p>Price: ₹79,900</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x200?text=iPhone+14" alt="iPhone 14">
+                <h3>iPhone 14</h3>
+                <p>Price: ₹89,900</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x200?text=Redmi+12" alt="Redmi 12">
+                <h3>Redmi 12</h3>
+                <p>Price: ₹11,999</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="confirmation" style="display: none;">
+            <p>Thank you for your message! We will get back to you soon.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Shreenath Mobiles. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("YOUR_USER_ID");
+        })();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
